@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*--------------------------HEADER--------------------------*/
+header{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: blueviolet;
+    height: 80px;
+    border-bottom: 2px solid orange;
+}
+header #logo{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#logo img{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+}
+#logo p{
+    font-size: 1.5em;
+    color: orange;
+}
+nav ul{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+nav ul li{
+    list-style: none;
+    padding: 20px;
+}
+nav ul li a:hover{
+    text-decoration: none;
+    color: blanchedalmond;
+    font-size: 1.2em;
+}
+nav ul li a:hover{
+    color: azure;
+}
+
+/*--------------------------Baniere--------------------------*/
