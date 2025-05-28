@@ -108,11 +108,13 @@ $(document).ready(()=>{ //atend la fin du chargement de la page
     let nbrSlides = image.lenght; //nbr img
     let activeSlide = 0; //img q'on souhaite faire apparaitre
     image.eq(activeSlide).show(); //montre l'img ciblée
-
+    setInterval (returnSlide,3000);
     function returnSlide(){ //return une nvlle img
         activeSlide++;
         if(activeSlide == nbrSlides){
             activeSlide = 0;
         }
+        image.not(activeSlide).fadeOut(2000);
+        image.eq(activeSlide).fadeIn(2000);
     }
 })
