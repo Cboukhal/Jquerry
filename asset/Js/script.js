@@ -10,3 +10,10 @@ $('#un').html("Je suis le H2 modifier depuis le Jquerry");//on peut enchainer en
 //Methode text ne prendra que le texte et pas les balises
 $('ul li:last-child').text("Je suis le li du Jquery");
 //methode de class
+// $('body').html("<selection id='align'></section>");
+$('#align').html("<div></div><div></div><div></div><div></div>");
+$("div").addClass("div");
+$('#align').addClass("alignement"); //ajouter une class
+$('#align').removeClass("alignement"); //supprime une class
+$('#align').toggleClass("alignement"); //ajoute ou supprime une class
+//methode des attributs
