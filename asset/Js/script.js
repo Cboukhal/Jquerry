@@ -6,4 +6,4 @@ $('.trois').css('font-size','1.5em').css('text-align','center').css('color','gre
 $('ul li:first-child').css('font-size','1.5em').css('text-align','center').css('color','red').css('padding','5px').css('background-color','purple');
 
 //Methode html
-$('#un').html("Je suis le H2 modifier depuis le Jquerry");
+$('#un').html("Je suis le H2 modifier depuis le Jquerry");//on peut enchainer en CSS mais pas en HTML.
