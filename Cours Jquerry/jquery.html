@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../asset/css/style.css">
+    <title>COURS JQUERY</title>
+</head>
+
+<body>
+    <H1>COURS JQUERY</H1>
+    <header>
+        <h2>SOMMAIRE:</h2>
+        <nav>
+            <ul>
+                <li><a href="#introduction">Introduction</a></li>
+                <li><a href="#presentation">1. Présentation</a></li>
+                <li><a href="#installer">2. Installer Jquery</a></li>
+                <li><a href="#syntaxe">3. Syntaxe</a></li>
+                <li><a href="#quatre">4. Les evenements</a></li>
+                <li><a href="#cinq">5. Les animations</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="partie">
+    <div id="introduction">
+        <h2>Introduction:</h2>
+        <p>
+            Le <b>JQUERY</b> est une bibliotheque (library) de javascript libre et multiplateforme, créé pour faciliter
+            l'écriture des scripts.
+            Le JQUERY est un objet de javascript qui possede ses propres méthodes et propriétés, il nous permet de moins
+            écrire pour plus coder. <br>
+            Il contient les fonctionnalités suivantes: <br>
+            <li>Selection des elements de HTML</li>
+            <li>Manipulation des elements HTML</li>
+            <li>Manipulation CSS</li>
+            <li>Manipulation des evenements</li>
+            <li>Animations javascript</li>
+            <li>Parcours et modification du DOM</li>
+            JQUERY est une library concise qui simplifie la navigation dans les documents HTML, la gestion des
+            evenements, l'animation et les interactions... pour un développement web plus rapide.
+        </p>
+    </div>
+    </section>
+    <section class="partie">
+    <div id="presentation">
+        <h2>1. Présentation:</h2>
+        <p>
+            <b>John Resig</b> est un développeur né le 8 mai 1984. Il est actuellement employé par la KHAN Academy en
+            tant que responsable du developpement javascript.
+            Il est notamment connu pour etre l'inventeur du JQUERY dont le but est de simplifier des commandes communes
+            de javascript.
+            <b>John Resig</b> etait un développeur qui travaillait sur ses propres projets et qui a constaté à quel
+            point il était difficile de faire du code javascript compatible avec tous les navigateurs, donc il décida de
+            créer sa propre bibliotheque JS pour remédier à ce probleme : <b>le JQUERY est né</b>. <br>
+            John Resig a mentionné pour la premiere fois une amélioration de la bibliotheque "Bihaviour" en Aout 2005.
+            <br>
+            Le 16 Janvier 2006, il a officiellement sorti sa library sous le nom de JQUERY.
+            <li><b>Aout 2006 : </b> JQuery1.0</li>
+            <li><b>Janvier 2007 : </b> JQuery1.1</li>
+            <li><b>Juillet 2007 : </b> JQuery1.1.3</li>
+            <li>etc...</li>
+            <li><b>Aout 2023 : </b> JQuery3.7.1</li>
+        </p>
+    </div>
+    </section>
+    <section class="partie">
+    <div id="installer">
+        <h2>2. Installer Jquery</h2>
+        <p>
+            <b>Jquery</b> est une bibliotheque javascript qui n'est pas installlée de base sur les navigateurs. Il faut
+            donc l'ajouter par le biais d'un fichier .Js ou par le lien d'un CDN. <br>
+        </p>
+        <h3>2.1 Inclure Jquery dans ses pages html</h3>
+        <p>
+            voir jquery.html
+        </p>
+        <h3>2.2 Importer Jquery via un CDN</h3>
+        <p>
+            "https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js" <br>
+            voir jquery.html
+        </p>
+    </div>
+    </section>
+    <section class="partie">
+    <div id="syntaxe">
+        <h2>3. Syntaxe</h2>
+        <p>
+            l'instanciation d'un objet Jquery peut se réaliser avec la syntaxe <b>Jquery()</b>. <br>
+            Cependant nous allons utiliser le raccourcis $() pour instancier nos objets. <br>
+            <u><b>Syntaxe:</b></u> $('selecteur').methode() <br>
+            <u><b>Exemple:</b></u> voir jquery.html et script.js
+        </p>
+        <h3>3.1 Selecteur CSS</h3>
+        <p>
+            le css est une méthode de Jquery qui renvoie une ou plusieurs propiétes de style pour les éléments
+            sélectionnés. <br>
+            <u><b>Exemple:</b></u> voir jquery.html et script.js
+        </p>
+        <h3>3.2 Selecteur hierarchique</h3>
+        <p>
+            <b> 1. ascendant, descendant :</b> <br>
+            <u>syntaxe:</u> $('parent enfant ...') <br>
+            <b> 2. enfant:</b> <br>
+            <u>syntaxe:</u> $('pere > fils') <br>
+            <b> 3. element suivant:</b> <br>
+            <u>syntaxe:</u> $('precedent + suivant') <br>
+            <b> 4. premier enfant:</b> <br>
+            <u>syntaxe:</u> $('pere:first-child') <br>
+            <b> 5. dernier enfant:</b> <br>
+            <u>syntaxe:</u> $('pere:last-child') <br>
+            <b> 6. premier element:</b> <br>
+            <u>syntaxe:</u> $('pere:first') <br>
+            <b> 7. pas d'enfant:</b> <br>
+            <u>syntaxe:</u> $('pere:empty') <br>
+            <b> 8. dernier element:</b> <br>
+            <u>syntaxe:</u> $('pere:last') <br>
+            <b> 9. exclure un element:</b> <br>
+            <u>syntaxe:</u> $('element:not') <br>
+        </p>
+    </div>
+    </section>
+    <section class="partie">
+    <div id="quatre">
+        <h2>4. Les evenements</h2>
+        <p>
+            Un evenement comme son nom l'indique est une action plus précisément qui survient à la suite d'un
+            déclencheur spécifique. <br>
+            Ces actions vont provenir généralement du navigateur lui meme, soit des utilisateurs. Les evenements
+            <b>load</b> et <b>ready</b> se déclenchent lorsque la page compléte est chargée tandis que les evenements
+            comme le click, le dblclick, le mousemove... se déclenche lorsque l'utilisateur réalise l'action prédéfinie.
+        </p>
+        <h3>4.1 L'evenement Ready</h3>
+        <p>En Jquery, la premiere methode qu'on va systématiquement appliquer est elle meme un evenement, c'est la
+            methode ou l'évenement ready . <br>
+            <u>syntaxe:</u> $(document).ready(fonction(){
+            ensemble d'instructions.
+            }) <br>
+        </p>
+        <h3>4.2 Gestionnaire d'evenements</h3>
+        <p>Un gestionnaire d'evenement est une fonction destinée à être lancée en réponse à une action de l'utilisateur
+            par
+            exemple le click. <br>
+            <b>Jquery</b> fournit plusieurs manières de définir un gestionnaire d'evenement. <br>
+            <b><u>syntaxe:</u></b> $(selecteur).on('click', "", nom_de_la_fonction); <br>
+            $(selecteur).on('click', nom_de_la_fonction); <br>
+            $(selecteur).on('click', "", fonction(){instructions}); ou utiliser une fonction fléchée<br>
+            $(selecteur).click(fonction(){instructions}); ou utiliser une fonction fléchée<br>
+        </p>
+        <h3>4.3 les evenements de la souris</h3>
+        <p>
+            la souris d'un ordinateur est un outil qui permet à l'utilisateur de réaliser de multiples actions comme
+            cliquer, se déplacer, scroller ...
+        </p>
+        <table border="1">
+            <tr>
+                <th>Méthodes</th>
+                <th>Actions</th>
+            </tr>
+            <tr>
+                <td>click()</td>
+                <td>lorsqu'on click sur la souris</td>
+            </tr>
+            <tr>
+                <td>dblclick()</td>
+                <td>lorsqu'on double click sur la souris</td>
+            </tr>
+            <tr>
+                <td>hover()</td>
+                <td>lorsqu'on survole un element</td>
+            </tr>
+            <tr>
+                <td>mouseenter()</td>
+                <td>lorsqu'on entre le pointeur de la souris dans un element</td>
+            </tr>
+            <tr>
+                <td>mouseleave()</td>
+                <td>lorsque le pointeur de la souris sort de l'élément</td>
+            </tr>
+            <tr>
+                <td>mousedown()</td>
+                <td>lorsqu'on presse un bouton de la souris</td>
+            </tr>
+            <tr>
+                <td>mouseup()</td>
+                <td>lorsqu'on relache un bouton de la souris</td>
+            </tr>
+            <tr>
+                <td>scroll()</td>
+                <td>lorsqu'on scrolle (utilisation de la molette)</td>
+            </tr>
+        </table>
+        <h3>4.4 les evenements du clavier</h3>
+        <p>
+            Le clavier comme la souris peuvent etre utilisés pour déclencher des instructions à la saisie d'une touche
+            par l'utilisateur ou en relachant la touche.
+        </p>
+        <table border="1">
+            <tr>
+                <th>Méthodes</th>
+                <th>Actions</th>
+            </tr>
+            <tr>
+                <td>keydown()</td>
+                <td>lorsqu'une touche du clavier est enfoncée</td>
+            </tr>
+            <tr>
+                <td>keyup()</td>
+                <td>lorsqu'on relache la touche du clavier</td>
+            </tr>
+            <tr>
+                <td>keypress()</td>
+                <td>lorsqu'on maintient une touche du clavier</td>
+            </tr>
+        </table>
+    </div>
+    </section>
+    <section class="parite">
+    <div id="cinq">
+        <h2>5. Les animations</h2>
+        <p>En mode natif, Jquery fournit un certains nombres de méthodes d'animations qui ajoutent un comportement de
+            glissement et de décoration et fonctionnent sur la plupart des navigateurs.
+        </p>
+        <table border="1">
+            <caption>Les méthodes d'animations</caption>
+            <tr>
+                <th>Méthodes</th>
+                <th>Actions</th>
+            </tr>
+            <tr>
+                <td>animate()</td>
+                <td>execute une animation personnalisée d'un ensemble de propriété css</td>
+            </tr>
+            <tr>
+                <td>delay()</td>
+                <td>pour retarder l'execution des elements suivants dans la liste d'attente</td>
+            </tr>
+            <tr>
+                <td>fadeIn()</td>
+                <td>affiche les elements en les atténuant en opacité</td>
+            </tr>
+            <tr>
+                <td>fadeOut()</td>
+                <td>masque les elements en les atténuant en opacité</td>
+            </tr>
+            <tr>
+                <td>fadeTo()</td>
+                <td>ajuste l'opacité des elements</td>
+            </tr>
+            <tr>
+                <td>fadeToggle()</td>
+                <td>affiche et masque les elements en fonction de leurs opacités</td>
+            </tr>
+            <tr>
+                <td>finish()</td>
+                <td>arrete les animations en cours</td>
+            </tr>
+            <tr>
+                <td>hide()</td>
+                <td>masque les elements</td>
+            </tr>
+            <tr>
+                <td>show()</td>
+                <td>affiche les elements</td>
+            </tr>
+            <tr>
+                <td>slideDown()</td>
+                <td>affiche les elements avec un mouvement coulissant</td>
+            </tr>
+            <tr>
+                <td>slideToggle()</td>
+                <td>affiche ou masque les elements avec un mouvement coulissant</td>
+            </tr>
+            <tr>
+                <td>slideUp()</td>
+                <td>masque les elements avec un mouvement coulissant</td>
+            </tr>
+            <tr>
+                <td>stop()</td>
+                <td>arrete l'animation en cours</td>
+            </tr>
+            <tr>
+                <td>toggle()</td>
+                <td>affiche ou masque les elements</td>
+            </tr>
+            <tr>
+                <td>eq()</td>
+                <td>fonctionne avec l'indice d'un element liste ou tableau</td>
+            </tr>
+        </table>
+    </div>
+    </section>
+    <br><br><br><br><br><br><br><br>
+</body>
+
+</html>
