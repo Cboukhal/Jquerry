@@ -7,5 +7,6 @@ $('ul li:first-child').css('font-size','1.5em').css('text-align','center').css('
 
 //Methode html
 $('#un').html("Je suis le H2 modifier depuis le Jquerry");//on peut enchainer en CSS mais pas en HTML.
-//Methode text
+//Methode text ne prendra que le texte et pas les balises
 $('ul li:last-child').text("Je suis le li du Jquery");
+//methode de class
