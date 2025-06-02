@@ -1,6 +1,8 @@
 *{
     margin: 0;
     padding: 0;
+    text-decoration: none;
+    color: blanchedalmond;
 }
 
 /*--------------------------HEADER--------------------------*/
@@ -146,7 +148,184 @@ nav ul li a:hover{
 #sdroite{
     left: 90%;
 }
+.decal{
+    height: 85vh;
+}
+/*--------------------------QSN--------------------------*/
+h2{
+    font-size: 3.5em;
+    color: blueviolet;
+    text-shadow: 2px 1px 2px orange;
+    text-align: center;
+    padding: 20px;
+}
+.apropos{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: blueviolet;
+    padding: 50px;
+}
+.apropos .image{
+    width: 45%;
+}
+.apropos .texte{
+    width: 50%;
+    text-align: center;
+    display: none;
+    transition: 1s ease-in-out;
+}
+.image{
+    width: 100%;
+}
+/*--------------------------Service--------------------------*/
+.services{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.service{
+    width: 30%;
+    position: relative;
+    padding: 20px;
+    border: 2px solid black;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    text-align: center;
+}
+.service img{
+    width: 100%;
+    height: 300px;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+.service h3{
+    padding-bottom: 20px;
+}
+.service .popup{
+    background-color: blueviolet;
+    color: whitesmoke;
+    border: 2px solid orangered;
+    padding: 10px;
+    /* border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px; */
+    text-align: right;
+    position: absolute;
+    top: 50%;
+    /* display: none; */
+    visibility: hidden;
+}
+.popup .close{
+    text-align: right;
+    font-size: 2em;
+    font-weight: bold;
+    color: white;
+    background-color: red;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0 10px;
+}
+.popup p{
+    text-align: center;
+}
+/*--------------------------Blog--------------------------*/
+.blog{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.article{
+    width: 30%;
+    position: relative;
+    padding: 20px;
+    border: 2px solid black;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    text-align: center;
+}
+.article img{
+    width: 100px;
+    height: 88px;
+    float: left;
+}
 
+/*--------------------------Contact--------------------------*/
+.contact{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: darkblue;
+    padding: 50px;
+}
+.contact aside{
+    width: 45%;
+}
+.contact iframe{
+    width: 100%;
+    height: 600px;
+    border: 0;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+.contact table{
+    width: 100%;
+}
+.contact input{
+    width: 100%;
+    height: 30px;
+    padding-bottom: 10px;
+}
+.contact textarea{
+    width: 100%;
+    height: 140px;
+    resize: none;
+}
+.contact label{
+    color: rosybrown;
+    font-size: 1em;
+}
+.contact label span{
+    font-size: 1.4em;
+    font-weight: bold;
+    color: crimson;
+}
+#envoie{
+    padding-bottom: 30px;
+    width: 30%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+/*--------------------------Footer--------------------------*/
+footer{
+    background-color: royalblue;
+    padding: 50px;
+    margin-top: 100px;
+}
+footer table{
+    width: 100%;
+    text-align: center;
+}
+h3{
+    font-size: 2.5em;
+    color: gold;
+}
+footer ul li{
+    list-style: none;
+    padding: 7px;
+}
+footer ul li a {
+    font-size: 1.2em;
+    color: crimson;
+    text-decoration: none;
+}
+footer ul li a:hover{
+    color: black;
+}
+footer p{
+    text-align: center;
+    color: crimson;
+    font-size: 1.4em;
+}
 /*--------------------------Responsive--------------------------*/
 /*--------------------------Burger--------------------------*/
 @media screen and (max-width:900px) {

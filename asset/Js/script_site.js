@@ -31,3 +31,52 @@ burger.addEventListener('click',()=>{
     burger.classList.toggle('croix');
     nav.classList.toggle('active');
 })
+
+/*-------------------------------------QSN--------------------------------------*/
+$('.image img').mouseenter(()=>{ 
+    $('.texte').show();
+})
+$('.apropos').mouseleave(()=>{ 
+    $('.texte').hide();
+})
+
+/*-------------------------------------Service--------------------------------------*/
+const btn = document.querySelectorAll(".services .btn");
+const popup = document.querySelectorAll(".services .popup");
+const fermer = document.querySelectorAll(".services .close");
+
+
+for (let i = 0; i < btn.length; i++) {
+    btn[i].addEventListener('click', (event) => {
+        event.preventDefault();//est une méthode JavaScript utilisée pour empêcher le comportement par défaut d’un événement dans le navigateur.
+        popup[i].style.visibility = 'visible';
+    });
+    fermer[i].addEventListener('click', () => {
+        popup[i].style.visibility = 'hidden';
+    });
+}
+
+
+/*-------------------------------------articles--------------------------------------*/
+let articles = $('.blog .article');
+for(let article of articles){
+    $(article).mouseenter(()=>{
+        $(article).css('border','2px solid red').css('background-color','white').css('color','black')
+    })
+    $(article).mouseleave(()=>{
+        $(article).css('border','').css('background-color','black').css('color','white')
+    })
+}
+
+/*-------------------------------------Contact--------------------------------------*/
+const champs = document.querySelectorAll('.contact input, .contact textarea');
+for(let champ of champs){
+    champ.addEventListener("focus",()=>{
+        champ.style.backgroundColor = 'orange';
+    })
+}
+for(let champ of champs){
+    champ.addEventListener("blur",()=>{
+        champ.style.backgroundColor = 'white';
+    })
+}
