@@ -80,3 +80,14 @@ for(let champ of champs){
         champ.style.backgroundColor = 'white';
     })
 }
+
+const form = document.querySelector('.contact form');
+const reussi = document.querySelector('.reussite');
+form.addEventListener('submit',(element)=>{
+        element.preventDefault();
+        reussi.style.display = "block";
+        setTimeout(()=>{
+            reussi.style.display = "none";
+        },5000)
+    })
+
