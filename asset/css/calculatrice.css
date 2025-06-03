@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+h1{
+    background-color: black;
+    color: whitesmoke;
+    padding: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    width: 20%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+table {
+    border-collapse: collapse;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    background-color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-top: 10%;
+}
+
+/* Écran */
+#ecran {
+    height: 60px;
+    font-size: 1.8em;
+    text-align: right;
+    padding: 10px;
+    background-color: #222;
+    color: #0f0;
+    border-bottom: 2px solid #ccc;
+}
+
+/* Boutons */
+button {
+    width: 60px;
+    height: 60px;
+    font-size: 1.5em;
+    border: none;
+    background-color: #f5f5f5;
+    color: #333;
+    transition: background-color 0.3s, transform 0.1s;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ddd;
+    transform: scale(1.05);
+}
+
+/* Ligne des opérateurs spéciaux */
+#plus button,
+#moins button,
+#mult button,
+#div button,
+#egal button {
+    background-color: #ff9500;
+    color: white;
+}
+
+#plus button:hover,
+#moins button:hover,
+#mult button:hover,
+#div button:hover,
+#egal button:hover {
+    background-color: #e08700;
+}
+
+/* Bouton C */
+#return button,
+td:has(button:contains("C")) button {
+    background-color: #ff3b30;
+    color: white;
+}
+
+#return button:hover,
+td:has(button:contains("C")) button:hover {
+    background-color: #cc2c25;
+}

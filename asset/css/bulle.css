@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+h1{
+    background-color: black;
+    color: whitesmoke;
+    padding: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    width: 12%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+.bulle{
+    background-color: aquamarine;
+    border-radius: 50%;
+    position: absolute;
+    opacity: 0.3;
+    cursor: crosshair;
+    filter: hue-rotate(0deg);
+    /* animation: bubulle 10s forwards; */
+    box-shadow: 2px 2px 2px 2px blueviolet;
+}
+@keyframes bubulle{
+    to{
+        top: -300px;
+        opacity: 1;
+        filter: hue-rotate(720deg);       
+    }
+}
