@@ -9,6 +9,9 @@ header{
     justify-content: space-evenly;
     align-items: center;
     height: 80px;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
 }
 header .logo{
     width: 20%;
@@ -38,9 +41,188 @@ nav ul li{
 }
 nav ul li a{
     text-decoration: none;
-    color: red;
+    color: whitesmoke;
     font-size: 1.2em;
 }
 nav ul li a:hover{
     color: goldenrod;
+}
+
+/* ----------------------------------- baniere -----------------------------------*/
+#baniere{
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+#baniere img{
+    width: 100%;
+    height: 85vh;
+}
+.textban{
+    width: 100%;
+    position: absolute;
+    top: 30%;
+    text-align: center;
+}
+h1{
+    font-size: 4em;
+    color: goldenrod;
+    text-shadow: 2px 2px 2px green;
+    text-align: center;
+    /* left: 50%; */
+    padding: 10px;
+    /* transform: translateX(-50%); */
+}
+.btn{
+    padding: 15px 25px;
+    background-color: goldenrod;
+    color: green;
+    border-radius: 25px;
+    text-decoration: none;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* ----------------------------------- qsn -----------------------------------*/
+#qsn{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: goldenrod;
+    padding: 50px;
+}
+#qsn .image,
+#qsn .texte{
+    width: 45%;
+    padding: 10px;
+}
+.image img{
+    width: 100%;
+    border-radius: 30px;
+    /* animation: sortieGauche 2s ease-in-out; */
+}
+@keyframes sortieGauche {
+    from{
+        margin-left: -150%;
+    }
+    to{
+        margin-left: 0;
+    }
+}
+/* #qsn .texte{
+    animation: sortieDroite 2s ease-in-out;
+} */
+@keyframes sortieDroite {
+    from{
+        margin-right: -150%;
+    }
+    to{
+        margin-right: 0;
+    }
+}
+.texte p{
+    color: whitesmoke;
+    text-align: center;
+}
+h2{
+    font-size: 3em;
+    color: green;
+    padding: 30px;
+    background-color: goldenrod;
+    text-align: center;
+    margin-top: 40px;
+}
+h3{
+    font-size: 2em;
+    color: goldenrod;
+    text-shadow: 2px 2px 2px green;
+    padding: 10px;
+    text-align: left;
+    background-color: whitesmoke;
+    margin-bottom: 10px;
+}
+
+/* ----------------------------------- service -----------------------------------*/
+h4{
+    font-size: 1.5em;
+    color: green;
+    text-shadow: 2px 2px 2px goldenrod;
+    padding: 10px;
+    text-align: center;
+    background-color: whitesmoke;
+    margin-bottom: 10px;
+    margin-bottom: 10px;
+}
+#services{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 40px;
+}
+.service{
+    width: 30%;
+    padding: 20px;
+    border: 2px solid goldenrod;
+    border-radius: 30px;
+    text-align: center;
+}
+.service img{
+    width: 100%;
+    height: 300px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+.service p{
+    background-color: goldenrod;
+    color: whitesmoke;
+    margin-bottom: 30px;
+    padding: 10px;
+}
+
+/* #s2{
+    animation: sortieHaut 2s ease-in-out;
+} */
+@keyframes sortieHaut {
+    from{
+        margin-top: -150%;
+    }
+    to{
+        margin-top: 0;
+    }
+}
+
+/* ----------------------------------- article -----------------------------------*/
+#blog{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: goldenrod;
+    padding: 50px;
+}
+.article{
+    width: 20%;
+    padding: 20px;
+    border: 2px solid green;
+    border-radius: 30px;
+}
+.article img{
+    width: 100px;
+    height: 80px;
+    float: left;
+    border-radius: 10px;
+}
+.article h4{
+    background-color: goldenrod;
+}
+.article p{
+    text-align: justify;
+    color: whitesmoke;
+}
+@keyframes sortieBas {
+    from{
+        margin-bottom: -150%;
+    }
+    to{
+        margin-bottom: 0;
+    }
 }
