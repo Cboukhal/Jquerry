@@ -61,3 +61,6 @@ window.addEventListener('scroll',()=>{
         art4.style.animation = 'sortieDroite 2s ease-in-out';
     }
 })
+//API pour les communes
+//https://geo.api.gouv.fr/communes
+//Remplis automatiquement le champ ville à partie du code postal saisi par le formulaire
